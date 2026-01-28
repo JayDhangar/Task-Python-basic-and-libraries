@@ -9,7 +9,7 @@ app = Flask(__name__)
 @app.route("/")
 def dashboard():
 
-    datafile = pd.read_csv("data1/data.csv")
+    datafile = pd.read_csv(r"C:\Users\sad\.vscode\Python VScode\TASKS\Task1\data1\data.csv")  #uciml/breast-cancer-wisconsin-data
     x = datafile["perimeter_worst"]
     y = datafile["area_worst"]
 
